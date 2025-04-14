@@ -1,16 +1,18 @@
-def slice_simple():
-    texto = "Awesome"
-    # Código a implementar, se debe utilizar la variable 'texto' para resolver el ejercicio.
-    # No se debe modificar la definición de la función, ni ingresar otro valor mediante input.
+def check_vowels():
+    # Código a implementar utilizando input.
     # Para verificar este ejercicio ejecutar el comando
-    # `pytest tp3_slice_simple_test.py` o `python tp3_slice_simple_test.py`
+    # `pytest tp3_in_string_test.py` o `python tp3_in_string_test.py`
 
-    x = "Awesome"
-    x_real = x.lower()
+    nombre = input("Inserte tu nombre: ")
 
-    print(x_real[ :3])    #Imprime las 3 primera letras del texto
+    nombre_low = nombre.lower()
 
-    mitad = int(len(x_real)/2)      #me dice cual es la mitad del texto // El int me quita la parte fraccional, no redondea
-    print(x_real[mitad - 1 : mitad + 2])      #DESDE mitad-2 HASTA mitad+1
+    print("Contiene a:" , "a" in nombre_low)
 
-    print(x_real[ :4] + x[-3: ])
+    print("Contiene e:" , "e" in nombre_low)
+
+    print("Contiene i:" , "i" in nombre_low)
+
+    print("Contiene o:" , "o" in nombre_low)
+
+    print("Contiene u:" , "u" in nombre_low)
